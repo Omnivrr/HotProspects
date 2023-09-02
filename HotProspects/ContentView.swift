@@ -6,27 +6,22 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     var body: some View {
-        VStack {List
-            {
-                Text("Taylor Swift")
-                    .swipeActions {
-                        Button(role: .destructive) {
-                            print("Hi")
-                        } label: {
-                            Label("Delete", systemImage: "minus.circle")
-                        }
+        VStack {
+            Button ("Request Permission") {
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        print("All set!")
+                    } else if let error = error {
+                        print(error.localizedDescription)
                     }
-                    .swipeActions(edge: .leading) {
-                        Button {
-                            print("Hi")
-                        } label: {
-                            Label("Pin", systemImage: "pin")
-                        }
-                        .tint(.orange)
                 }
+            }
+            Button("Schedule Notifications") {
+                //second
             }
         }
     }
