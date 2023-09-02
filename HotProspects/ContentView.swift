@@ -8,35 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var backgroundColor = Color.red
-
     var body: some View {
-        VStack {
-            Text("Hello, World!")
-                .padding()
-                .background(backgroundColor)
-
-            Text("Change Color")
-                .padding()
-                .contextMenu {
-                    Button {
-                        backgroundColor = .red
-                    } label: {
-                        Label("Red", systemImage: "checkmark.circle.fill")
-                            .foregroundColor(.red)
+        VStack {List
+            {
+                Text("Taylor Swift")
+                    .swipeActions {
+                        Button(role: .destructive) {
+                            print("Hi")
+                        } label: {
+                            Label("Delete", systemImage: "minus.circle")
+                        }
                     }
-                    Button("Green") {
-                        backgroundColor = .green
-                    }
-
-                    Button("Blue") {
-                        backgroundColor = .blue
-                    }
+                    .swipeActions(edge: .leading) {
+                        Button {
+                            print("Hi")
+                        } label: {
+                            Label("Pin", systemImage: "pin")
+                        }
+                        .tint(.orange)
                 }
+            }
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
