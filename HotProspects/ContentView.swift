@@ -21,7 +21,16 @@ struct ContentView: View {
                 }
             }
             Button("Schedule Notifications") {
-                //second
+                let content = UNMutableNotificationContent()
+                content.title = "Feed the fish"
+                content.subtitle = "They should be hungry right now"
+                content.sound = UNNotificationSound.default
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                
+                let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                
+                UNUserNotificationCenter.current().add(request)
             }
         }
     }
