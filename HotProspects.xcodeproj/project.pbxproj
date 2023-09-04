@@ -11,7 +11,8 @@
 		1936E6DF2A8D25F700006309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1936E6DE2A8D25F700006309 /* ContentView.swift */; };
 		1936E6E12A8D25FA00006309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1936E6E02A8D25FA00006309 /* Assets.xcassets */; };
 		1936E6E42A8D25FA00006309 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1936E6E32A8D25FA00006309 /* Preview Assets.xcassets */; };
-		19F6155D2AA3E90A00FA8013 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 19F6155C2AA3E90A00FA8013 /* SamplePackage */; };
+		196B46BA2AA697D500F57EB7 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B46B92AA697D500F57EB7 /* ProspectsView.swift */; };
+		196B46BC2AA697E800F57EB7 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B46BB2AA697E800F57EB7 /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		1936E6DE2A8D25F700006309 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1936E6E02A8D25FA00006309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1936E6E32A8D25FA00006309 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		196B46B92AA697D500F57EB7 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		196B46BB2AA697E800F57EB7 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F6155D2AA3E90A00FA8013 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +57,8 @@
 			children = (
 				1936E6DC2A8D25F700006309 /* HotProspectsApp.swift */,
 				1936E6DE2A8D25F700006309 /* ContentView.swift */,
+				196B46B92AA697D500F57EB7 /* ProspectsView.swift */,
+				196B46BB2AA697E800F57EB7 /* MeView.swift */,
 				1936E6E02A8D25FA00006309 /* Assets.xcassets */,
 				1936E6E22A8D25FA00006309 /* Preview Content */,
 			);
@@ -86,7 +90,6 @@
 			);
 			name = HotProspects;
 			packageProductDependencies = (
-				19F6155C2AA3E90A00FA8013 /* SamplePackage */,
 			);
 			productName = HotProspects;
 			productReference = 1936E6D92A8D25F600006309 /* HotProspects.app */;
@@ -117,7 +120,6 @@
 			);
 			mainGroup = 1936E6D02A8D25F600006309;
 			packageReferences = (
-				19F6155B2AA3E90900FA8013 /* XCRemoteSwiftPackageReference "SamplePackage" */,
 			);
 			productRefGroup = 1936E6DA2A8D25F600006309 /* Products */;
 			projectDirPath = "";
@@ -145,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196B46BC2AA697E800F57EB7 /* MeView.swift in Sources */,
+				196B46BA2AA697D500F57EB7 /* ProspectsView.swift in Sources */,
 				1936E6DF2A8D25F700006309 /* ContentView.swift in Sources */,
 				1936E6DD2A8D25F700006309 /* HotProspectsApp.swift in Sources */,
 			);
@@ -347,25 +351,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		19F6155B2AA3E90900FA8013 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/SamplePackage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		19F6155C2AA3E90A00FA8013 /* SamplePackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 19F6155B2AA3E90900FA8013 /* XCRemoteSwiftPackageReference "SamplePackage" */;
-			productName = SamplePackage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1936E6D12A8D25F600006309 /* Project object */;
 }
