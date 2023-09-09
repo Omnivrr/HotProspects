@@ -27,7 +27,7 @@ struct ContentView: View {
                 }
             MeView()
                 .tabItem {
-                    Label("Me", systemImage: "person.crop.square")
+                    Label("Me", systemImage: "person.crop")
             }
         }
         .environmentObject(prospects)
