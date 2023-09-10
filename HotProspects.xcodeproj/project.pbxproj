@@ -14,7 +14,6 @@
 		196B46BA2AA697D500F57EB7 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B46B92AA697D500F57EB7 /* ProspectsView.swift */; };
 		196B46BC2AA697E800F57EB7 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B46BB2AA697E800F57EB7 /* MeView.swift */; };
 		196B46BE2AA69D9100F57EB7 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B46BD2AA69D9100F57EB7 /* Prospect.swift */; };
-		1986A5482AAD2FF1009179DC /* Ideal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986A5472AAD2FF1009179DC /* Ideal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		196B46B92AA697D500F57EB7 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		196B46BB2AA697E800F57EB7 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		196B46BD2AA69D9100F57EB7 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
-		1986A5472AAD2FF1009179DC /* Ideal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ideal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 			children = (
 				1936E6DC2A8D25F700006309 /* HotProspectsApp.swift */,
 				1936E6DE2A8D25F700006309 /* ContentView.swift */,
-				1986A5472AAD2FF1009179DC /* Ideal.swift */,
 				196B46B92AA697D500F57EB7 /* ProspectsView.swift */,
 				196B46BD2AA69D9100F57EB7 /* Prospect.swift */,
 				196B46BB2AA697E800F57EB7 /* MeView.swift */,
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				196B46BC2AA697E800F57EB7 /* MeView.swift in Sources */,
-				1986A5482AAD2FF1009179DC /* Ideal.swift in Sources */,
 				196B46BE2AA69D9100F57EB7 /* Prospect.swift in Sources */,
 				196B46BA2AA697D500F57EB7 /* ProspectsView.swift in Sources */,
 				1936E6DF2A8D25F700006309 /* ContentView.swift in Sources */,
