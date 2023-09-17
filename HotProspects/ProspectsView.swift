@@ -31,14 +31,14 @@ struct ProspectsView: View {
                     .swipeActions {
                         if prospect.isContacted {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
                             } label: {
                                 Label("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark")
                             }
                             .tint(.blue)
                         } else {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
                             } label: {
                                 Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
                             }
