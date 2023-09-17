@@ -4,7 +4,7 @@
 //
 //  Created by Bukhari Sani on 04/09/2023.
 //
-
+import CodeScanner
 import SwiftUI
 
 struct ProspectsView: View {
@@ -13,6 +13,8 @@ struct ProspectsView: View {
     }
     
     @EnvironmentObject var prospects: Prospects
+    @State private var isShowingScanner = false
+    
     let filter: FilterType
     
     
@@ -31,13 +33,13 @@ struct ProspectsView: View {
                 .navigationTitle(title)
                 .toolbar {
                     Button {
-                        let prospect = Prospect()
-                        prospect.name = "Bukhari Abdulkadir"
-                        prospect.emailAddress = "akbukharisani@gmail.com"
-                        prospects.people.append(prospect)
+                        isShowingScanner = true
                     } label: {
                         Label("Scan", systemImage: "qrcode.viewfinder")
                     }
+                }
+                .sheet(isPresented: $isShowingScanner) {
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "Bukhari AbdulQadeer\nakbukharisani@gmail.com", completion: handleScan)
                 }
         }
     }
@@ -64,6 +66,11 @@ struct ProspectsView: View {
         case .uncontacted:
             return prospects.people.filter { !$0.isContacted }
         }
+    }
+    
+    func handleScan(result: Result<ScanResult, ScanError>) {
+        isShowingScanner = false
+        
     }
 }
 
